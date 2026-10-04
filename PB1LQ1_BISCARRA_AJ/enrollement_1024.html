@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RSA 1024-bit Secure Registration</title>
+
+    <link rel="stylesheet" href="css/enrolrsa_1024.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <div class="logo-box">
+          <h1>RSA 1024</h1>
+          <p>Secure Student Registration System</p>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="form-card">
+          <h2>Create Account</h2>
+          <p class="form-subtitle">Complete your information below</p>
+
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" id="suName" placeholder="Juan Dela Cruz" />
+          </div>
+          <div class="input-group">
+            <label>Username</label>
+            <input type="text" id="suUname" placeholder="username" />
+          </div>
+
+          <div class="row">
+            <div class="input-group">
+              <label>Birth Date</label>
+              <input type="date" id="suBday" />
+            </div>
+
+            <div class="input-group">
+              <label>Gender</label>
+              <select id="suGender">
+                <option value="">Choose</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Year Level</label>
+            <select id="suYear">
+              <option value="">Select Year Level</option>
+              <option value="1st Year">1st Year</option>
+              <option value="2nd Year">2nd Year</option>
+              <option value="3rd Year">3rd Year</option>
+              <option value="4th Year">4th Year</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="suPword" placeholder="Enter password" />
+          </div>
+
+          <button id="suButton" onclick="signUp()" disabled>Sign Up</button>
+
+          <div id="signup-message" class="message"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="results-container">
+      <div class="result-card">
+        <h2>Encrypted Data</h2>
+        <pre id="encryptedData">No data encrypted yet.</pre>
+      </div>
+
+      <div class="result-card">
+        <h2>Decrypted Data</h2>
+        <pre id="decryptedData">No data decrypted yet.</pre>
+      </div>
+    </div>
+
+    <script src="js/enrolrsa_1024.js"></script>
+  </body>
+</html>

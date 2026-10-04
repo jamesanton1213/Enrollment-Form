@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fc;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+p {
+  color: #1a237e;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: #666;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#signup {
+  margin-bottom: 35px;
+}
+
+#signup h2 {
+  margin-bottom: 20px;
+  color: #283593;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3949ab;
+  box-shadow: 0 0 5px rgba(57, 73, 171, 0.2);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #3949ab;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background: #283593;
+}
+
+button:disabled {
+  background: #9fa8da;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.status-text {
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.result-box {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f8f9fb;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+}
+
+.result-box h2 {
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  max-height: 300px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#encryptedData {
+  color: #b71c1c;
+}
+
+#decryptedData {
+  color: #1b5e20;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .result-box {
+    padding: 15px;
+  }
+}

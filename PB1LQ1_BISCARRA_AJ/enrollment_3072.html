@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSA Sign Up 3072-bit</title>
+    <link rel="stylesheet" href="css/enrolrsa_3072.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Create Account</h1>
+      </header>
+
+      <section id="signup">
+        <h2>Sign Up</h2>
+
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" placeholder="Enter Full Name" />
+        </div>
+
+        <div class="form-group">
+          <label for="signupUname">Username</label>
+          <input type="text" id="signupUname" placeholder="Enter Username" />
+        </div>
+
+        <div class="form-group">
+          <label for="signupBday">Date of Birth</label>
+          <input type="date" id="signupBday" />
+        </div>
+
+        <div class="form-group">
+          <label for="signupYear">Year Level</label>
+          <select id="signupYear">
+            <option value="">Select Year Level</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="signupGender">Gender</label>
+          <select id="signupGender">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="signupPword">Password</label>
+          <input
+            type="password"
+            id="signupPword"
+            placeholder="Enter Password"
+          />
+        </div>
+
+        <button id="signupButton" onclick="signUp()" disabled>Sign Up</button>
+
+        <div id="signup-message" class="message"></div>
+
+        <p class="status-text">Generating RSA 3072-bit keys...</p>
+      </section>
+
+      <section class="result-box">
+        <h2>RSA 3072-bit Encrypted Data</h2>
+        <pre id="encryptedData">No data encrypted yet.</pre>
+      </section>
+
+      <section class="result-box">
+        <h2>RSA 3072-bit Decrypted Data</h2>
+        <pre id="decryptedData">No data decrypted yet.</pre>
+      </section>
+    </div>
+
+    <script src="js/enrolrsa_3072.js"></script>
+  </body>
+</html>
